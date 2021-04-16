@@ -17,7 +17,7 @@ docker run -it node
 ```
 ### Build The App Image Using the `Dockerfile`
 
-To build an image the simple server app from the source code of this repository via the `Dockerfile` (see `/Dockerfile`), run the following from the top level directory of this repository:
+To build an image of the simple server app from the source code of this repository via the `Dockerfile` (see `/Dockerfile`), run the following from the top level directory of this repository:
 ```
 docker build .
 ```
