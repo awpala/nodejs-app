@@ -61,7 +61,7 @@ docker rmi <image-id | tag-name>
 
 ### Containers
 
-Start up a container from an image (use optional flag `-d` to run detached, i.e., transfering out of the terminal):
+Start up a container from an image (use optional flag `-d` to run detached, i.e., to prevent transferring out of the terminal):
 ```
 docker start [-d] -p <routed-port>:<exposed-port> <image-id>
 ```
