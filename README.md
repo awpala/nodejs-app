@@ -65,10 +65,6 @@ Start up a container from an image (use optional flag `-d` to run detached, i.e.
 ```
 docker start [-d] -p <routed-port>:<exposed-port> <image-id | image-tag>
 ```
-Stop a running container:
-```
-docker stop <image-id | image-tag>
-```
 List all processes/containers (omitting optional flag `-a` will only show currently running containers):
 ```
 docker ps [-a]
@@ -76,6 +72,10 @@ docker ps [-a]
 Name/label a container:
 ```
 docker --name <container-name> <container-id>
+```
+Stop a running container:
+```
+docker stop <container-id | container-name>
 ```
 Remove a container:
 ```
