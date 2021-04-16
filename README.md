@@ -52,18 +52,22 @@ docker images
 ```
 Tag/label an image:
 ```
-docker tag <image-id> <tag-name>
+docker tag <image-id> <image-tag>
 ```
 Remove an image:
 ```
-docker rmi <image-id | tag-name>
+docker rmi <image-id | image-tag>
 ```
 
 ### Containers
 
 Start up a container from an image (use optional flag `-d` to run detached, i.e., to prevent transferring out of the terminal):
 ```
-docker start [-d] -p <routed-port>:<exposed-port> <image-id>
+docker start [-d] -p <routed-port>:<exposed-port> <image-id | image-tag>
+```
+Stop a running container:
+```
+docker stop <image-id | image-tag>
 ```
 List all processes/containers (omitting optional flag `-a` will only show currently running containers):
 ```
@@ -82,5 +86,5 @@ docker rm <container-name | container-id>
 
 An image or container can be inspected for its metadata:
 ```
-docker inspect <image-id | image-name | container-id | container-name>
+docker inspect <image-id | image-tag | container-id | container-name>
 ```
