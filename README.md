@@ -29,7 +29,7 @@ docker tag <image-id> server-app
 
 Start a container named `instance` on `http://localhost:3001` from the image `server-app` (use flag `-d` to run in detached mode):
 ```
-sudo docker run -d -p 3001:3000 server-app
+sudo docker run -d -p 3001:3000 --name instance server-app
 ```
 The live app can now be viewed in the browser at `http://localhost:3001`.
 
